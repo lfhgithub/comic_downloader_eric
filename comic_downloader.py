@@ -53,7 +53,10 @@ def main():
         return
     start_date = datetime.strptime(args.start_date, '%Y-%m-%d')
     end_date = datetime.strptime(args.end_date, '%Y-%m-%d')
-    output_dir = args.comic
+    comics_dir = 'comics'
+    os.makedirs(comics_dir, exist_ok=True)
+    timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    output_dir = os.path.join(comics_dir, timestamp)
     os.makedirs(output_dir, exist_ok=True)
     current_date = start_date
     while current_date <= end_date:
