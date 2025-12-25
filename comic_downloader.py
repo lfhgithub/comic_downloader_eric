@@ -45,8 +45,8 @@ def main():
     print("Available comics:", ', '.join(comics))
     parser = argparse.ArgumentParser(description='Download comics from gocomics.com')
     parser.add_argument('--comic', type=str, required=True, help='Comic name (e.g., garfield)')
-    parser.add_argument('--start-date', type=str, default='2023-11-15', help='Start date YYYY-MM-DD')
-    parser.add_argument('--end-date', type=str, default='2023-11-17', help='End date YYYY-MM-DD')
+    parser.add_argument('--start-date', type=str, default='2025-11-27', help='Start date YYYY-MM-DD')
+    parser.add_argument('--end-date', type=str, default='2025-11-27', help='End date YYYY-MM-DD')
     args = parser.parse_args()
     if args.comic not in comics:
         print(f"Comic '{args.comic}' not available. Available: {', '.join(comics)}")
