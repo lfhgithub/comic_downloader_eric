@@ -60,6 +60,7 @@ def main():
     timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     output_dir = os.path.join(comics_dir, timestamp)
     os.makedirs(output_dir, exist_ok=True)
+    print(f"Saving PNGs to: {os.path.abspath(output_dir)}")
     current_date = start_date
     while current_date <= end_date:
         download_image(args.comic, current_date, output_dir)
