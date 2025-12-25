@@ -5,6 +5,8 @@ import os
 import argparse
 import time
 
+# This is a comment
+
 def get_available_comics():
     # Note: gocomics.com uses JS rendering, so we use a hardcoded list of popular comics
     comics = ['garfield', 'peanuts', 'dilbert', 'calvinandhobbes', 'pluggers', 'foxtrot', 'bignate', 'pearlsbeforeswine', 'nonsequitur', 'wizardofid', 'beetlebailey', 'blondie', 'familycircus', 'hagar', 'ziggy', 'shoe']
